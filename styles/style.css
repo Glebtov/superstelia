@@ -1,0 +1,50 @@
+.div_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo_header,
+.lines_header {
+  margin: 10px;
+}
+
+.phone_header {
+  margin: 18px 10px 10px 10px;
+}
+
+.logo_header {
+  position: absolute;
+  left: 1em;
+}
+
+.lines_header {
+  position: absolute;
+  right: 1em;
+}
+
+.phonenumber {
+  color: var(--unnamed, #111);
+  font-family: Santello Regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.high_text {
+  color: var(--unnamed, #111);
+  font-family: "Manrope", sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 3em;
+  margin: 1em;
+}
+
+.high_text_image {
+  position: relative;
+  text-align: center;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
