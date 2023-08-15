@@ -47,11 +47,42 @@
 
 .high_under_text {
   color: var(--unnamed, #111);
-  font-family: Santello Regular;
+  font-family: "Santello";
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-top: 1.5em;
   margin-left: 8em;
+}
+
+@font-face {
+  font-family: "Santello";
+  src: url(santello-regular.ttf);
+}
+.main_chapter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5em;
+  width: 50%;
+  margin-top: 6em;
+}
+
+.main_chapter_header {
+  color: var(--unnamed, #111);
+  font-family: "Manrope";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 0.75em;
+}
+
+.main_chapter_specs {
+  color: var(--unnamed, #111);
+  font-family: "Santello";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */
