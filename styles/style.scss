@@ -39,12 +39,18 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-top: 3em;
-    margin: 1em;
+    padding-top: 2.5em;
+    margin: 0.3em;
+    width: fit-content;
 }
 
-.high_text_image {
-    position: relative;
-    text-align: center;
-    color: white;
+.high_under_text {
+    color: var(--unnamed, #111);
+    font-family: Santello Regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 1.5em;
+    margin-left: 8em;
 }
