@@ -1,11 +1,8 @@
-import TestItem from "./TestItem/TestItem"
+import HeaderItem from "./head/Head"
 
 function App() {
     return ( 
-    <div>
-        <h1 > Let 's start</h1>
-        <h2></h2>
-    </div>    
+       HeaderItem()
 );
 }
 
