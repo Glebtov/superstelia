@@ -1,3 +1,5 @@
+
+
 .div_header {
     display: flex;
     justify-content: center;
@@ -60,13 +62,22 @@
     src: url(santello-regular.ttf);
 }
 
+html{
+    max-width: 100%;
+}
+
 .main_chapter {
+    max-width: 1920px;
     display: flex;
     flex-flow: row;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 282px;
+    grid-gap: 170px;
     width: 50%;
     margin-top: 6em;
+}
+
+.main_chapter_box_header {
+    margin-top: 3em;
 }
 
 .main_chapter_header {
@@ -78,6 +89,7 @@
     line-height: normal;
     margin-left: 0.75em;
     text-wrap: nowrap;
+    margin-bottom: 0;
 }
 
 .main_chapter_specs {
@@ -88,24 +100,25 @@
     font-weight: 400;
     line-height: normal;
     text-wrap: nowrap;
-    margin-left: auto;
+    margin: 0;
 }
 
 .main_chapter_box_specs {
-    margin-left: auto;
+    height:fit-content;
+    width: fit-content;
     order: 2;
-    margin: 0 10px;
+    margin: 0 37.5px;
+    margin-top: 10.3em;
 }
 
 .yellow_line {
     outline: 1px solid #F3C301;
     background: #F3C301;
     height: 2px;
-    width: screen;
-    margin-left: 1.7em;
-    margin-right: 1.7em;
+    width: 98%;
+    margin-left: 0.75em;
 }
 
-.h2 {
-    font-style: none;
+ul {
+    list-style-image: url("/../superstelia/public/img/list.gif");
 }
