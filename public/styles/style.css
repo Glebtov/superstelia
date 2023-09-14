@@ -120,5 +120,7 @@ html {
 }
 
 ul {
-  list-style-image: url("/../superstelia/public/img/list.gif");
+  list-style-image: url("img/list.gif");
+  width: auto;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
