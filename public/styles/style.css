@@ -123,4 +123,8 @@ ul {
   list-style-image: url("img/list.gif");
   width: auto;
   height: auto;
+}
+
+.list_first {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
