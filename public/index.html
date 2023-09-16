@@ -11,9 +11,6 @@
 </head>
 
 <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-
     <header>
         <div class="div_header">
             <img src="styles/img/image 3.png" class="logo_header">
@@ -40,9 +37,9 @@
 
         <div class="main_list_box">
             <div class="list_box">
-                <ul>
-                    <li onclick="showPhoto()">Тіньовий</li>
-                    <div class="list_first">
+                <ul class="list">
+                    <li onclick="showPhoto()" class="list_li_first">Тіньовий</li>
+                    <div class="list_first" id="listFirst">
                         <img src="styles/img/photo_2023-06-28 16.30.png">
                     </div>
                     <li>Резинова заглушка</li>
@@ -50,7 +47,7 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
