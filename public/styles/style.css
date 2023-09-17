@@ -151,4 +151,8 @@ li::before {
 
 :root {
   --bg-image: url("img/Vector.png");
+}
+
+.list_box {
+  padding-left: 540px;
 }/*# sourceMappingURL=style.css.map */
