@@ -141,7 +141,7 @@ li {
   display: flex;
   flex-flow: row;
   grid-template-columns: 1fr 1fr;
-  width: 50%;
+  padding-left: 60.5em;
 }
 
 .main_chapter_box_specs_second {
