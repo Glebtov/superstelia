@@ -26,7 +26,7 @@
 
 .phonenumber {
   color: var(--unnamed, #111);
-  font-family: Santello Regular;
+  font-family: SantelloRegular;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -95,6 +95,14 @@ html {
   height: 2px;
   width: 98%;
   margin-left: 0.75em;
+  text-align: right;
+}
+
+.yellow_line_half {
+  outline: 1px solid #F3C301;
+  background: #F3C301;
+  height: 2px;
+  margin-left: 0.75em;
 }
 
 .list_first {
@@ -109,7 +117,7 @@ li {
 }
 
 .list_box {
-  width: 50%;
+  width: 70%;
 }
 
 .main_chapter_second {
@@ -118,6 +126,7 @@ li {
   flex-flow: row;
   grid-template-columns: 1fr 1fr;
   padding-left: 60.5em;
+  font-family: SantelloRegular;
 }
 
 .main_chapter_box_specs_second {
@@ -157,7 +166,6 @@ li {
 }
 
 .main_chapter_box_header {
-  margin-top: 3em;
   width: 50%;
   text-align: left;
 }
@@ -169,7 +177,6 @@ li {
   width: fit-content;
   order: 2;
   margin: 0 37.5px;
-  margin-top: 10.3em;
   width: 50%;
   text-align: right;
 }
@@ -201,6 +208,13 @@ li {
   margin-top: 4em;
 }
 
+.main_list_box_fourth {
+  width: 100%;
+  display: flex;
+  margin-top: 4em;
+  margin-bottom: 8em;
+}
+
 .black_box {
   width: 50em;
   height: 343px;
@@ -216,13 +230,54 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-left: 3em;
+  margin-right: 10px;
+  padding: 45px;
 }
 
 .list_li_specs_work {
   display: inline-flex;
-  margin-right: 10px;
   padding: 0;
-  width: -moz-fit-content;
-  width: fit-content;
+}
+
+.list_li_specs_text {
+  display: inline-flex;
+  margin-right: 10px;
+  padding: 0px 60px 0px;
+}
+
+.specs_text {
+  color: var(--unnamed, #F2F0F0);
+  font-family: SantelloRegular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 393px;
+}
+
+.header_specs {
+  margin-right: 10px;
+  padding: 45px;
+}
+
+.half_line {
+  display: flex;
+}
+
+@font-face {
+  font-family: "SantelloRegular";
+  src: url("santello-regular.ttf");
+}
+.characteristics {
+  color: var(--unnamed, #111);
+  font-family: SantelloRegular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.black_box_footer {
+  background-color: black;
+  height: 207px;
 }/*# sourceMappingURL=style.css.map */
