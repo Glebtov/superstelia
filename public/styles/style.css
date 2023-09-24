@@ -100,9 +100,9 @@ html {
   outline: 1px solid #F3C301;
   background: #F3C301;
   height: 2px;
-  width: 98%;
-  margin-left: 0.75em;
-  text-align: right;
+  /* width: 98%; */
+  /* margin-left: 0.75em; */
+  /* text-align: right; */
 }
 
 .yellow_line_half {
@@ -288,3 +288,72 @@ li {
   background-color: black;
   height: 207px;
 }/*# sourceMappingURL=style.css.map */
+
+.main-chapter-header-second {
+  color: var(--unnamed, #111);
+  font-family: "Manrope";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-wrap: nowrap;
+}
+
+.main-chapter-description-second {
+  color: var(--unnamed, #111);
+  font-family: "Santello";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-wrap: nowrap;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.box {
+  border-radius: 10px;
+  width: 760px;
+  height: 400px;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+.box-description {
+  vertical-align: top;
+  width: calc(60% - 4px);
+  display: inline-block;
+}
+
+.box-description p {
+  color: #fff;
+  padding: 50px;
+  color: var(--unnamed, #F2F0F0);
+  font-family: SantelloRegular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.box-description .title {
+  color: var(--unnamed, #F3C301);
+  font-family: Santello Regular;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.box-image {
+  width: 40%;
+  height: 100%;
+  background: url('./img/image\ 9.png') center center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
