@@ -1,3 +1,10 @@
+body {
+  background-image: url("img/image 8.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 77%;
+}
+
 .div_header {
   display: flex;
   justify-content: center;
