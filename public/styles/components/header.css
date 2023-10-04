@@ -1,0 +1,58 @@
+.header__logo {
+  position: absolute;
+  left: 1em;
+}
+.header__logo .header__lines {
+  margin: 10px;
+}
+
+.header__lines {
+  position: absolute;
+  right: 1em;
+}
+
+.phone__header {
+  margin: 10px 10px 10px 10px;
+}
+
+.phonenumber {
+  color: var(--unnamed, #111);
+  font-family: SantelloRegular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.div_header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.high_text {
+  color: var(--unnamed, #111);
+  font-family: "Manrope", sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-top: 2.5em;
+  margin: 0.3em;
+  width: fit-content;
+}
+
+.high_under_text {
+  color: var(--unnamed, #111);
+  font-family: "Santello";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1.5em;
+  margin-left: 8em;
+}
+
+/*# sourceMappingURL=header.css.map */
