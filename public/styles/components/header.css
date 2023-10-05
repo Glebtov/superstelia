@@ -11,11 +11,11 @@
   right: 1em;
 }
 
-.phone__header {
+.header__phone {
   margin: 10px 10px 10px 10px;
 }
 
-.phonenumber {
+.header__phonenumber {
   color: var(--unnamed, #111);
   font-family: SantelloRegular;
   font-size: 18px;
@@ -23,16 +23,18 @@
   font-weight: 400;
   line-height: normal;
   margin: 0;
+  text-decoration: none;
+  color: black;
 }
 
-.div_header {
+.header__div {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
 }
 
-.high_text {
+.header__highText {
   color: var(--unnamed, #111);
   font-family: "Manrope", sans-serif;
   font-size: 90px;
@@ -44,7 +46,7 @@
   width: fit-content;
 }
 
-.high_under_text {
+.header__underText {
   color: var(--unnamed, #111);
   font-family: "Santello";
   font-size: 28px;

@@ -1,4 +1,17 @@
-.main_chapter_header {
+.chapter {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.chapter__item {
+  flex-grow: 1;
+}
+
+.chapter__item-text {
   color: var(--unnamed, #111);
   font-family: "Manrope";
   font-size: 45px;
@@ -10,7 +23,7 @@
   margin-bottom: 0;
 }
 
-.main_chapter_specs {
+.chapter__name-text {
   color: var(--unnamed, #111);
   font-family: "Santello";
   font-size: 32px;
@@ -19,6 +32,15 @@
   line-height: normal;
   text-wrap: nowrap;
   margin: 0;
+}
+
+.chapter__name {
+  height: fit-content;
+  width: fit-content;
+  order: 2;
+  margin: 0 37.5px;
+  width: 50%;
+  text-align: right;
 }
 
 .yellow_line {
@@ -30,6 +52,15 @@
   text-align: right;
 }
 
+.list-box {
+  width: 100%;
+  display: flex;
+}
+
+.list {
+  width: 70%;
+}
+
 .yellow_line_half {
   outline: 1px solid #F3C301;
   background: #F3C301;
@@ -37,8 +68,41 @@
   margin-left: 0.75em;
 }
 
-.list_first {
+.list__item-active {
   display: none;
+}
+
+.list__item-text {
+  color: var(--unnamed, #111);
+  font-family: SantelloRegular;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chapter__name-text-align {
+  text-align: right;
+  margin: 0;
+}
+
+.list-horizontal {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list__item-horizontal {
+  display: inline-flex;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.box {
+  border-radius: 10px;
+  width: 760px;
+  height: 400px;
+  background-color: #000;
+  box-sizing: border-box;
 }
 
 li {
@@ -46,10 +110,6 @@ li {
   padding: 10px 22px;
   align-items: center;
   gap: 10px;
-}
-
-.list_box {
-  width: 70%;
 }
 
 .main_chapter_second {
@@ -80,54 +140,9 @@ li {
   margin: 0;
 }
 
-.align {
-  text-align: right;
-  margin: 0;
-}
-
-.main_chapter {
-  max-width: 1920px;
-  display: flex;
-  flex-flow: row;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 170px;
-  width: 100%;
-  margin-top: 1em;
-}
-
-.main_chapter_box_header {
-  width: 50%;
-  text-align: left;
-}
-
-.main_chapter_box_specs {
-  height: fit-content;
-  width: fit-content;
-  order: 2;
-  margin: 0 37.5px;
-  width: 50%;
-  text-align: right;
-}
-
-.list_specs {
-  list-style-type: none;
-  padding: 0;
-}
-
-.list_li_specs {
-  display: inline-flex;
-  margin-right: 10px;
-  padding: 0;
-}
-
 .fifty {
   width: 35%;
   margin: 0;
-}
-
-.main_list_box {
-  width: 100%;
-  display: flex;
 }
 
 .main_list_box_third {
@@ -196,25 +211,6 @@ li {
   font-family: "SantelloRegular";
   src: url("santello-regular.ttf");
 }
-.characteristics {
-  color: var(--unnamed, #111);
-  font-family: SantelloRegular;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.main-chapter-header-second {
-  color: var(--unnamed, #111);
-  font-family: "Manrope";
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-wrap: nowrap;
-}
-
 .main-chapter-description-second {
   color: var(--unnamed, #111);
   font-family: "Santello";
@@ -223,21 +219,6 @@ li {
   font-weight: 400;
   line-height: normal;
   text-wrap: nowrap;
-}
-
-.container {
-  width: 96%;
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-}
-
-.box {
-  border-radius: 10px;
-  width: 760px;
-  height: 400px;
-  background-color: #000;
-  box-sizing: border-box;
 }
 
 .box-description {
