@@ -1,10 +1,9 @@
 .chapter {
-  width: 96%;
   margin: 0 auto;
+  margin-top: 1em;
   display: flex;
   align-items: flex-end;
-  width: 100%;
-  margin-top: 1em;
+  width: 98%;
 }
 
 .chapter__item {
@@ -18,27 +17,22 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-left: 0.75em;
-  text-wrap: nowrap;
   margin-bottom: 0;
 }
 
 .chapter__name-text {
   color: var(--unnamed, #111);
-  font-family: 'Santello';
+  font-family: 'SantelloRegular';
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-wrap: nowrap;
   margin: 0;
 }
 
 .chapter__name {
   height:fit-content;
-  width: fit-content;
   order: 2;
-  margin: 0 37.5px;
   width: 50%;
   text-align: right;
 }
@@ -47,14 +41,14 @@
   outline: 1px solid #F3C301;
   background: #F3C301;
   height: 2px;
-  width: 98%;
-  margin-left: 0.75em;
+  width: 100%;
   text-align: right;
 }
 
 .list-box {
   width: 100%;
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .list{
@@ -74,7 +68,7 @@
 
 .list__item-text {
   color: var(--unnamed, #111);
-  font-family: SantelloRegular;
+  font-family: 'SantelloRegular';
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -93,122 +87,74 @@
 
 .list__item-horizontal{
   display: inline-flex;
-  margin-right: 10px;
+  margin-right: 58px;
   padding: 0;
 }
 
-.box {
+.card-box {
   border-radius: 10px;
   width: 760px;
-  height: 400px;
+  height: fit-content;
   background-color: #000;
   box-sizing: border-box;
-}
-
-
-
-li{
   display: flex;
-  padding: 10px 22px;
-  align-items: center;
-  gap: 10px;
 }
 
-.main_chapter_second {
-  max-width: 1920px;
-  display: flex;
-  flex-flow: row;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 60.5em;
-  font-family: SantelloRegular;
-}
-
-.main_chapter_box_specs_second {
-  height:fit-content;
-  width: fit-content;
-  order: 2;
-  margin: 0 37.5px;
-  margin-top: 2em;
-}
-
-.main_chapter_specs_second {
-  color: var(--unnamed, #111);
-  font-family: 'Santello';
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-wrap: nowrap;
-  margin: 0;
-}
-
-
-
-
-
-.fifty {
-  width: 35%;
-  margin: 0;
-}
-
-
-
-.main_list_box_third {
-  width: 100%;
-  display: flex;
-  margin-top: 4em;
-}
-
-.main_list_box_fourth {
-  width: 100%;
-  display: flex;
-  margin-top: 4em;
-  margin-bottom: 8em;
-}
-
-.black_box {
-  width: 50em;
-  height: 343px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  background: var(--unnamed, #111);
-}
-
-.black_box_text{
+.card__item-title{
   color: var(--unnamed, #F3C301);
-  font-family: Santello Regular;
+  font-family: 'Santello Regular';
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-right: 10px;
-  padding: 45px;
+  flex-grow: 1;
 }
 
-.list_li_specs_work{
-  display: inline-flex;
-  padding: 0;
+.card__item {
+  vertical-align: top;
+  width: calc(60% - 4px);
+  flex-grow: 1;
 }
 
-.list_li_specs_text{
-  display: inline-flex;
-  margin-right: 10px;
-  padding: 0px 60px 0px;
-}
-
-.specs_text{
+.card__item-text {
+  padding: 30px 50px 50px 50px;
   color: var(--unnamed, #F2F0F0);
-  font-family: SantelloRegular;
+  font-family: 'SantelloRegular';
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  max-width: 393px;
+  margin: 0;
 }
 
-.header_specs{
-  margin-right: 10px;
-  padding: 45px;
+.card__item,
+.card__item-title {
+  color: var(--unnamed, #F3C301);
+  font-family: 'SantelloRegular';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-image {
+  background: center center no-repeat;
+  height: fit-content;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card__item-box{
+  display: flex;
+  padding: 35px 45px 0px 45px;
+  align-items: center;
+  gap: 85px;
+}
+
+li {
+  display: flex;
+  padding: 10px 22px;
+  align-items: center;
+  gap: 10px;
 }
 
 .half_line {
@@ -217,59 +163,9 @@ li{
 
 @font-face {
   font-family: "SantelloRegular";
-  src: url("santello-regular.ttf");
+  src: url("../santello-regular.ttf");
 }
 
-
-
-
-
-.main-chapter-description-second {
-  color: var(--unnamed, #111);
-  font-family: "Santello";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-wrap: nowrap;
-}
-
-
-
-
-
-.box-description {
-  vertical-align: top;
-  width: calc(60% - 4px);
-  display: inline-block;
-}
-
-.box-description p {
-  color: #fff;
-  padding: 50px;
-  color: var(--unnamed, #F2F0F0);
-  font-family: SantelloRegular;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.box-description .title {
-  color: var(--unnamed, #F3C301);
-  font-family: Santello Regular;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.box-image {
-  width: 40%;
-  height: 100%;
-  background: url('./img/image\ 9.png') center center no-repeat;
-  background-size: cover;
-  display: inline-block;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.list__box-horizontal{
+  padding: 0;
 }
