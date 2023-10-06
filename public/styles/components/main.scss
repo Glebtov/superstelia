@@ -1,5 +1,5 @@
 .chapter {
-  margin: 0 auto;
+  margin: auto;
   margin-top: 1em;
   display: flex;
   align-items: flex-end;
@@ -45,14 +45,10 @@
   text-align: right;
 }
 
-.list-box {
+.chapter__list-box {
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
-}
-
-.list{
-  width: 70%;
 }
 
 .yellow_line_half {
@@ -62,11 +58,11 @@
   margin-left: 0.75em;
 }
 
-.list__item-active {
+.chapter__list__item-active {
   display: none;
 }
 
-.list__item-text {
+.chapter__list__item-text {
   color: var(--unnamed, #111);
   font-family: 'SantelloRegular';
   font-size: 28px;
@@ -80,12 +76,12 @@
   margin: 0;
 }
 
-.list-horizontal{
+.chapter__list-horizontal{
   list-style-type: none;
   padding: 0;
 }
 
-.list__item-horizontal{
+.chapter__list__item-horizontal{
   display: inline-flex;
   margin-right: 58px;
   padding: 0;
@@ -116,7 +112,7 @@
 }
 
 .card__item-text {
-  padding: 30px 50px 50px 50px;
+  padding: 30px 12px 0 40px;
   color: var(--unnamed, #F2F0F0);
   font-family: 'SantelloRegular';
   font-size: 28px;
@@ -137,17 +133,16 @@
 }
 
 .card-image {
-  background: center center no-repeat;
-  height: fit-content;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  height: 100%;
 }
 
 .card__item-box{
   display: flex;
-  padding: 35px 45px 0px 45px;
+  padding: 35px 45px 0 45px;
   align-items: center;
-  gap: 85px;
+  gap: 70px;
 }
 
 li {
@@ -166,6 +161,43 @@ li {
   src: url("../santello-regular.ttf");
 }
 
-.list__box-horizontal{
+.chapter__list-box-horizontal{
   padding: 0;
+}
+
+.slider{}
+
+.slider__item{
+  background-color: black;
+  display: flex;
+  height: fit-content;
+  width: 440px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__item-name{
+  color: var(--unnamed, #F3C301);
+  font-family: 'SantelloRegular';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slider__item-whiteLine{
+  outline: 1px solid white;
+  background: white;
+  height: 2px;
+  width: 100%;
+}
+
+.slider__item-text{
+  color: var(--unnamed, #FFF);
+  font-family: 'SantelloRegular';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
