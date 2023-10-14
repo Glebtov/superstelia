@@ -3,4 +3,41 @@
   height: 207px;
 }
 
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__name {
+  color: var(--unnamed, #F3C301);
+  font-family: Manrope;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer__link-phone,
+.footer__link-instagram {
+  color: var(--unnamed, #F2F0F0);
+  font-family: "SantelloRegular";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__button {
+  height: 100%;
+  cursor: pointer;
+  transform-style: black;
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=footer.css.map */
