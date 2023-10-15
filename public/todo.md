@@ -1,2 +1,4 @@
-- tailwind css 
--
+- Mobile adaptive
+- Slider
+- Photos
+- Text
