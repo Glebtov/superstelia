@@ -1,341 +1,417 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
     <title>Superstelia</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="header__div">
-            <img src="styles/img/logo.png" class="header__logo">
-            <img src="styles/img/phone.png" class="header__phone">
-            <p class="header__phonenumber">
-                <a href="tel:+380954573956" style="text-decoration: none; color: black;">+38 (095) 457-39-56</a>
-            </p>
-            <img src="styles/img/lines.png" class="header__lines">
-        </div>
-        <div>
-            <h1 class="header__highText">Натяжні стелі</h1>
-            <h4 class="header__underText">Розробка дизайну та освітлення<br>стельового простору</h4>
-        </div>
+      <div class="header__div">
+        <img src="styles/img/logo.png" class="header__logo" />
+        <img src="styles/img/phone.png" class="header__phone" />
+        <p class="header__phonenumber">
+          <a
+            href="tel:+380954573956"
+            style="text-decoration: none; color: black"
+            >+38 (095) 457-39-56</a
+          >
+        </p>
+        <img src="styles/img/lines.png" class="header__lines" />
+      </div>
+      <div>
+        <h1 class="header__highText">Натяжні стелі</h1>
+        <h4 class="header__underText">
+          Розробка дизайну та освітлення<br />стельового простору
+        </h4>
+      </div>
     </header>
 
     <main>
-        <div class="chapter" style="margin-top: 15em;">
-            <div class="chapter__item">
-                <h2 class="chapter__item-text">Ми пропонуємо сучасні профільні системи та освітлення</h2>
-            </div>
-            <div class="chapter__name">
-                <h3 class="chapter__name-text">Профільні системи:</h3>
-            </div>
+      <div class="chapter" style="margin-top: 15em">
+        <div class="chapter__item">
+          <h2 class="chapter__item-text">
+            Ми пропонуємо сучасні профільні системи та освітлення
+          </h2>
         </div>
-        <div class="yellow_line"></div>
+        <div class="chapter__name">
+          <h3 class="chapter__name-text">Профільні системи:</h3>
+        </div>
+      </div>
+      <div class="yellow_line"></div>
 
-        <div class="chapter" style="flex-direction: row-reverse; width: 60%;">
-
-            <div class="chapter__list">
-                <ul class="">
-                    <li onclick="showPhotoFirst()" class="chapter__list__item">
-                        <img src="styles/img/list.gif" id="listFirstImage" class="chapter__list__item-image">
-                        <p class="chapter__list__item-text">Тіньовий</p>
-                    </li>
-                    <div class="chapter__list__item-active-first" id="listFirst">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-
-                    <li onclick="showPhotoSecond()">
-                        <img src="styles/img/list.gif" id="listSecondImage">
-                        <p class="chapter__list__item-text">Резинова заглушка</p>
-                    </li>
-                    <div class="chapter__list__item-active-second" id="listSecond">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-
-                    <li onclick="showPhotoThird()">
-                        <img src="styles/img/list.gif" id="listThirdImage">
-                        <p class="chapter__list__item-text">Безвставочний</p>
-                    </li>
-                    <div class="chapter__list__item-active-third" id="listThird">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-
-                    <li onclick="showPhotoFourth()">
-                        <img src="styles/img/list.gif" id="listFourthImage">
-                        <p class="chapter__list__item-text">Парящий</p>
-                    </li>
-                    <div class="chapter__list__item-active-fourth" id="listFourth">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-                </ul>
+      <div class="chapter" style="flex-direction: row-reverse; width: 60%">
+        <div class="chapter__list">
+          <ul class="">
+            <li onclick="showPhotoFirst()" class="chapter__list__item">
+              <img
+                src="styles/img/list.gif"
+                id="listFirstImage"
+                class="chapter__list__item-image"
+              />
+              <p class="chapter__list__item-text">Тіньовий</p>
+            </li>
+            <div class="chapter__list__item-active-first" id="listFirst">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-        </div>
 
-        <div class="chapter">
-            <div class="chapter__item"></div>
-
-            <div class="chapter__name">
-                <h3 class="chapter__name-text">
-                    <p class="chapter__name-text-align">Освітлення:</p>
-                </h3>
+            <li onclick="showPhotoSecond()">
+              <img src="styles/img/list.gif" id="listSecondImage" />
+              <p class="chapter__list__item-text">Резинова заглушка</p>
+            </li>
+            <div class="chapter__list__item-active-second" id="listSecond">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-        </div>
-        <div class="yellow_line"></div>
 
-        <div class="chapter" style="flex-direction: row-reverse; width: 60%;">
-            <div class="chapter__list">
-                <ul class="">
-                    <li class="chapter__list__item" onclick="showPhotoFifth()">
-                        <img src="styles/img/list.gif" id="listFifthImage">
-                        <p class="chapter__list__item-text">Трекові системи</p>
-                    </li>
-                    <div class="chapter__list__item-active-fourth" id="listFifth">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-                    <li onclick="showPhotoSixth()">
-                        <img src="styles/img/list.gif" id="listSixthImage">
-                        <p class="chapter__list__item-text">Весь спектр люстр <br>та світильників</p>
-                    </li>
-                    <div class="chapter__list__item-active-fourth" id="listSixth">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-                    <li onclick="showPhotoSeventh()">
-                        <img src="styles/img/list.gif" id="listSeventhImage">
-                        <p class="chapter__list__item-text">Лінійне освітлення</p>
-                    </li>
-                    <div class="chapter__list__item-active-fourth" id="listSeventh">
-                        <img src="styles/img/photo_2023-06-28 16.30.png">
-                    </div>
-                </ul>
+            <li onclick="showPhotoThird()">
+              <img src="styles/img/list.gif" id="listThirdImage" />
+              <p class="chapter__list__item-text">Безвставочний</p>
+            </li>
+            <div class="chapter__list__item-active-third" id="listThird">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-        </div>
 
-        <div class="chapter">
-            <div class="chapter__item">
-                <h2 style="margin: 0;" class="chapter__item-text">Ми - компанія, яка займається монтаженим натяжних стель</h2>
+            <li onclick="showPhotoFourth()">
+              <img src="styles/img/list.gif" id="listFourthImage" />
+              <p class="chapter__list__item-text">Парящий</p>
+            </li>
+            <div class="chapter__list__item-active-fourth" id="listFourth">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-            <div class="chapter__name">
-                <h3 class="chapter__name-text">Наші цінності:</h3>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter__item"></div>
+
+        <div class="chapter__name">
+          <h3 class="chapter__name-text">
+            <p class="chapter__name-text-align">Освітлення:</p>
+          </h3>
+        </div>
+      </div>
+      <div class="yellow_line"></div>
+
+      <div class="chapter" style="flex-direction: row-reverse; width: 60%">
+        <div class="chapter__list">
+          <ul class="">
+            <li class="chapter__list__item" onclick="showPhotoFifth()">
+              <img src="styles/img/list.gif" id="listFifthImage" />
+              <p class="chapter__list__item-text">Трекові системи</p>
+            </li>
+            <div class="chapter__list__item-active-fourth" id="listFifth">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-        </div>
-
-        <div class="yellow_line chapter"></div>
-
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="chapter__list">
-                <ul class="chapter__list-box-horizontal">
-                    <li class="chapter__list__item-horizontal">
-                        <img src="styles/img/truth.png">
-                        <p class="chapter__list__item-text">Чесність</p>
-                    </li>
-                    <li class="chapter__list__item-horizontal">
-                        <img src="styles/img/clean.png">
-                        <p class="chapter__list__item-text">Чистота</p>
-                    </li>
-                    <li class="chapter__list__item-horizontal" style="margin: 0">
-                        <img src="styles/img/modern.png">
-                        <p class="chapter__list__item-text">Сучасність</p>
-                    </li>
-                </ul>
-                <img src="styles/img/Andrew.png">
+            <li onclick="showPhotoSixth()">
+              <img src="styles/img/list.gif" id="listSixthImage" />
+              <p class="chapter__list__item-text">
+                Весь спектр люстр <br />та світильників
+              </p>
+            </li>
+            <div class="chapter__list__item-active-fourth" id="listSixth">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-        </div>
-
-        <div class="chapter">
-            <div class="chapter__item">
-                <h2 class="chapter__item-text">Етапи нашої роботи</h2>
+            <li onclick="showPhotoSeventh()">
+              <img src="styles/img/list.gif" id="listSeventhImage" />
+              <p class="chapter__list__item-text">Лінійне освітлення</p>
+            </li>
+            <div class="chapter__list__item-active-fourth" id="listSeventh">
+              <img src="styles/img/photo_2023-06-28 16.30.png" />
             </div>
-            <div class="chapter__name">
-                <h3 class="chapter__name-text" style="font-size: 90px">01</h3>
+          </ul>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter__item">
+          <h2 style="margin: 0" class="chapter__item-text">
+            Ми - компанія, яка займається монтаженим натяжних стель
+          </h2>
+        </div>
+        <div class="chapter__name">
+          <h3 class="chapter__name-text">Наші цінності:</h3>
+        </div>
+      </div>
+
+      <div class="yellow_line chapter"></div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__list">
+          <ul class="chapter__list-box-horizontal">
+            <li class="chapter__list__item-horizontal">
+              <img src="styles/img/truth.png" />
+              <p class="chapter__list__item-text">Чесність</p>
+            </li>
+            <li class="chapter__list__item-horizontal">
+              <img src="styles/img/clean.png" />
+              <p class="chapter__list__item-text">Чистота</p>
+            </li>
+            <li class="chapter__list__item-horizontal" style="margin: 0">
+              <img src="styles/img/modern.png" />
+              <p class="chapter__list__item-text">Сучасність</p>
+            </li>
+          </ul>
+          <img src="styles/img/Andrew.png" />
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter__item">
+          <h2 class="chapter__item-text">Етапи нашої роботи</h2>
+        </div>
+        <div class="chapter__name">
+          <h3 class="chapter__name-text" style="font-size: 90px">01</h3>
+        </div>
+      </div>
+
+      <div class="yellow_line"></div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="card-box">
+          <div class="card__item">
+            <div class="card__item-box">
+              <img src="styles/img/call.png" />
+              <span class="card__item-title">Дзвінок</span>
             </div>
+            <p class="card__item-text">
+              Отримуємо від вас дзвінок та домовляємось про зустріч та заміри
+            </p>
+          </div>
+          <div>
+            <img src="styles/img/image%209.png" class="card-image" />
+          </div>
         </div>
-        
-        <div class="yellow_line"></div>
+      </div>
 
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="card-box">
-                <div class="card__item">
-                    <div class="card__item-box">
-                        <img src="styles/img/call.png">
-                        <span class="card__item-title">Дзвінок</span>
-                    </div>
-                    <p class="card__item-text">Отримуємо від вас дзвінок та домовляємось про зустріч та заміри</p>
-                </div>
-                <div>
-                    <img src="styles/img/image%209.png" class="card-image">
-                </div>
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__name">
+          <h3 class="chapter__name-text" style="font-size: 90px">02</h3>
+        </div>
+      </div>
+
+      <div class="half_line">
+        <div style="width: 34%; margin: 0"></div>
+        <div class="yellow_line_half" style="width: 64%"></div>
+      </div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="card-box">
+          <div class="card__item">
+            <div class="card__item-box">
+              <img src="styles/img/pencil.png" />
+              <span class="card__item-title">Заміри</span>
             </div>
+            <p class="card__item-text">
+              До вас приходить наш спеціаліст та проводить замір майбутнього
+              обєкту. А також проводить консультацію та вислуховує ваші
+              побажання
+            </p>
+          </div>
+          <div>
+            <img class="card-image" src="styles/img/image%2012.png" />
+          </div>
         </div>
+      </div>
 
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__name">
+          <h3 class="chapter__name-text" style="font-size: 90px">03</h3>
+        </div>
+      </div>
 
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="chapter__name">
-                <h3 class="chapter__name-text" style="font-size: 90px">02</h3>
+      <div class="half_line">
+        <div style="width: 34%; margin: 0"></div>
+        <div class="yellow_line_half" style="width: 64%"></div>
+      </div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="card-box">
+          <div class="card__item">
+            <div class="card__item-box">
+              <img src="styles/img/instruments.png" />
+              <span class="card__item-title">Монтаж</span>
             </div>
+            <p class="card__item-text">
+              У завчасно затверджений час, до вас приходять наші майстри. Та
+              чисто і якісно виконуюють свою роботу, без зайвих незручностей для
+              вас
+            </p>
+          </div>
+          <div>
+            <img class="card-image" src="styles/img/image%2011.png" />
+          </div>
         </div>
+      </div>
 
-        <div class="half_line">
-            <div style="width: 34%; margin: 0;"></div>
-            <div class="yellow_line_half" style="width: 64%;"></div>
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__name">
+          <h3 class="chapter__name-text" style="font-size: 90px">04</h3>
         </div>
+      </div>
 
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="card-box">
-                <div class="card__item">
-                    <div class="card__item-box">
-                        <img src="styles/img/pencil.png">
-                        <span class="card__item-title">Заміри</span>
-                    </div>
-                    <p class="card__item-text">До вас приходить наш спеціаліст та проводить замір майбутнього обєкту. А також проводить консультацію та вислуховує ваші побажання</p>
-                </div>
-                <div>
-                    <img  class="card-image" src="styles/img/image%2012.png">
-                </div>
+      <div class="half_line">
+        <div style="width: 34%; margin: 0"></div>
+        <div class="yellow_line_half" style="width: 64%"></div>
+      </div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="card-box">
+          <div class="card__item">
+            <div class="card__item-box">
+              <img src="styles/img/result.png" />
+              <span class="card__item-title">Результат</span>
             </div>
+            <p class="card__item-text">
+              Здача обєкту з урахуванням ваших побажань та без зайвих
+              "сюрпризів"
+            </p>
+          </div>
+          <div>
+            <img class="card-image" src="styles/img/image%2010.png" />
+          </div>
         </div>
+      </div>
 
-
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="chapter__name">
-                <h3 class="chapter__name-text" style="font-size: 90px">03</h3>
-            </div>
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__item">
+          <h2 class="chapter__item-text">Інформація про об'єкти</h2>
         </div>
+      </div>
 
-        <div class="half_line">
-            <div style="width: 34%; margin: 0;"></div>
-            <div class="yellow_line_half" style="width: 64%;"></div>
+      <div class="yellow_line"></div>
+
+      <div class="chapter" style="flex-direction: row-reverse">
+        <div class="chapter__list">
+          <ul class="chapter__list-box-horizontal">
+            <img
+              src="styles/img/left.png"
+              style="margin-right: 20px"
+              class="previous-btn"
+            />
+            <img src="styles/img/right.png" class="next-btn" />
+          </ul>
         </div>
+      </div>
 
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="card-box">
-                <div class="card__item">
-                    <div class="card__item-box">
-                        <img src="styles/img/instruments.png">
-                        <span class="card__item-title">Монтаж</span>
-                    </div>
-                    <p class="card__item-text">У завчасно затверджений час, до вас приходять наші майстри. Та чисто і якісно виконуюють свою роботу, без зайвих незручностей  для вас</p>
-                </div>
-                <div>
-                    <img class="card-image" src="styles/img/image%2011.png">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="chapter__name">
-                <h3 class="chapter__name-text" style="font-size: 90px">04</h3>
-            </div>
-        </div>
-
-        <div class="half_line">
-            <div style="width: 34%; margin: 0;"></div>
-            <div class="yellow_line_half" style="width: 64%;"></div>
-        </div>
-
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="card-box">
-                <div class="card__item">
-                    <div class="card__item-box">
-                        <img src="styles/img/result.png">
-                        <span class="card__item-title">Результат</span>
-                    </div>
-                    <p class="card__item-text">Здача обєкту з урахуванням ваших побажань та без зайвих "сюрпризів"</p>
-                </div>
-                <div>
-                    <img class="card-image" src="styles/img/image%2010.png">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="chapter" style="flex-direction: row-reverse">
-            <div class="chapter__item">
-                <h2 class="chapter__item-text">Інформація про об'єкти</h2>
-            </div>
-        </div>
-        
-        <div class="yellow_line"></div>
-
-        <div class="chapter" style="flex-direction: row-reverse;">
-            <div class="chapter__list">
-                <ul class="chapter__list-box-horizontal">
-                    <img src="styles/img/left.png" style="margin-right: 20px" class="previous-btn">
-                    <img src="styles/img/right.png" class="next-btn">
-                </ul>
-            </div>
-        </div>
-
+      <div class="wrapper">
         <div class="slider">
-            <div class="slider__item">
-                <img class="slider__item-photo" src="styles/img/sliderPhoto1.png">
-                <div style="margin: 33px;">
-                    <span class="slider__item-name">
-                        Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.
-                    </span>
-                    <div class="slider__item-whiteLine"></div>
-                    <p class="slider__item-text">Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.</p>
-                </div>
-
+          <div class="slider__item">
+            <img class="slider__item-photo" src="styles/img/sliderPhoto1.png" />
+            <div style="margin: 33px">
+              <span class="slider__item-name">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </span>
+              <div class="slider__item-whiteLine"></div>
+              <p class="slider__item-text">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </p>
             </div>
+          </div>
 
-            <div class="slider__item">
-                <img class="slider__item-photo" src="styles/img/sliderPhoto1.png">
-                <div style="margin: 33px;">
-                    <span class="slider__item-name">
-                        Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.
-                    </span>
-                    <div class="slider__item-whiteLine"></div>
-                    <p class="slider__item-text">Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.</p>
-                </div>
-
+          <div class="slider__item">
+            <img class="slider__item-photo" src="styles/img/sliderPhoto1.png" />
+            <div style="margin: 33px">
+              <span class="slider__item-name">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </span>
+              <div class="slider__item-whiteLine"></div>
+              <p class="slider__item-text">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </p>
             </div>
+          </div>
 
-            <div class="slider__item">
-                <img class="slider__item-photo" src="styles/img/sliderPhoto1.png">
-                <div style="margin: 33px;">
-                    <span class="slider__item-name">
-                        Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.
-                    </span>
-                    <div class="slider__item-whiteLine"></div>
-                    <p class="slider__item-text">Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.</p>
-                </div>
-
+          <div class="slider__item">
+            <img class="slider__item-photo" src="styles/img/sliderPhoto1.png" />
+            <div style="margin: 33px">
+              <span class="slider__item-name">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </span>
+              <div class="slider__item-whiteLine"></div>
+              <p class="slider__item-text">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </p>
             </div>
+          </div>
 
-            <div class="slider__item">
-                <img class="slider__item-photo" src="styles/img/sliderPhoto1.png">
-                <div style="margin: 33px;">
-                    <span class="slider__item-name">
-                        Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.
-                    </span>
-                    <div class="slider__item-whiteLine"></div>
-                    <p class="slider__item-text">Збір всієї необхідної супровідної вантаж документації, страхування, розмитнення і т.д.</p>
-                </div>
-
+          <div class="slider__item">
+            <img class="slider__item-photo" src="styles/img/sliderPhoto1.png" />
+            <div style="margin: 33px">
+              <span class="slider__item-name">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </span>
+              <div class="slider__item-whiteLine"></div>
+              <p class="slider__item-text">
+                Збір всієї необхідної супровідної вантаж документації,
+                страхування, розмитнення і т.д.
+              </p>
             </div>
+          </div>
         </div>
-
+      </div>
     </main>
 
     <footer>
-        <div class="footer">
-            <h2 class="footer__name">Контакти</h2>
-            <ul class="footer__link">
-                <li class="footer__link-phone"><img src="styles/img/phone.png"><a href="tel:+380954573956" style="color: white; text-decoration: none;">+38 (095) 457-39-56</a></li>
-                <li class="footer__link-instagram"><img src="styles/img/instagram.png"><a href="https://www.instagram.com/superstelya777/" style="color: white; text-decoration: none;">superstelya777</a></li>
-            </ul>
-            <img src="styles/img/up.png" class="footer__button" onclick="scrollToTop()">
-        </div>
+      <div class="footer">
+        <h2 class="footer__name">Контакти</h2>
+        <ul class="footer__link">
+          <li class="footer__link-phone">
+            <img src="styles/img/phone.png" /><a
+              href="tel:+380954573956"
+              style="color: white; text-decoration: none"
+              >+38 (095) 457-39-56</a
+            >
+          </li>
+          <li class="footer__link-instagram">
+            <img src="styles/img/instagram.png" /><a
+              href="https://www.instagram.com/superstelya777/"
+              style="color: white; text-decoration: none"
+              >superstelya777</a
+            >
+          </li>
+        </ul>
+        <img
+          src="styles/img/up.png"
+          class="footer__button"
+          onclick="scrollToTop()"
+        />
+      </div>
     </footer>
     <script src="script.js"></script>
-    <script src="slider.js"></script>
     <script src="scroll.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="slider.js"></script>
+  </body>
 </html>

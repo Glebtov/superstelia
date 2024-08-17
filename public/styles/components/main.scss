@@ -12,7 +12,7 @@
 
 .chapter__item-text {
   color: var(--unnamed, #111);
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-size: 45px;
   font-style: normal;
   font-weight: 500;
@@ -22,7 +22,7 @@
 
 .chapter__name-text {
   color: var(--unnamed, #111);
-  font-family: 'SantelloRegular';
+  font-family: "SantelloRegular";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -31,15 +31,15 @@
 }
 
 .chapter__name {
-  height:fit-content;
+  height: fit-content;
   order: 2;
   width: 50%;
   text-align: right;
 }
 
 .yellow_line {
-  outline: 1px solid #F3C301;
-  background: #F3C301;
+  outline: 1px solid #f3c301;
+  background: #f3c301;
   height: 2px;
   width: 100%;
   text-align: right;
@@ -52,8 +52,8 @@
 }
 
 .yellow_line_half {
-  outline: 1px solid #F3C301;
-  background: #F3C301;
+  outline: 1px solid #f3c301;
+  background: #f3c301;
   height: 2px;
   margin-left: 0.75em;
 }
@@ -61,7 +61,7 @@
 .chapter__list__item-active-first,
 .chapter__list__item-active-second,
 .chapter__list__item-active-third,
-.chapter__list__item-active-fourth{
+.chapter__list__item-active-fourth {
   display: none;
 }
 
@@ -71,7 +71,7 @@
 
 .chapter__list__item-text {
   color: var(--unnamed, #111);
-  font-family: 'SantelloRegular';
+  font-family: "SantelloRegular";
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -83,12 +83,12 @@
   margin: 0;
 }
 
-.chapter__list-horizontal{
+.chapter__list-horizontal {
   list-style-type: none;
   padding: 0;
 }
 
-.chapter__list__item-horizontal{
+.chapter__list__item-horizontal {
   display: inline-flex;
   margin-right: 58px;
   padding: 0;
@@ -103,9 +103,9 @@
   display: flex;
 }
 
-.card__item-title{
-  color: var(--unnamed, #F3C301);
-  font-family: 'Santello Regular';
+.card__item-title {
+  color: var(--unnamed, #f3c301);
+  font-family: "Santello Regular";
   font-size: 32px;
   font-weight: 400;
   line-height: normal;
@@ -120,8 +120,8 @@
 
 .card__item-text {
   padding: 30px 12px 0 40px;
-  color: var(--unnamed, #F2F0F0);
-  font-family: 'SantelloRegular';
+  color: var(--unnamed, #f2f0f0);
+  font-family: "SantelloRegular";
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -131,8 +131,8 @@
 
 .card__item,
 .card__item-title {
-  color: var(--unnamed, #F3C301);
-  font-family: 'SantelloRegular';
+  color: var(--unnamed, #f3c301);
+  font-family: "SantelloRegular";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -145,7 +145,7 @@
   height: 100%;
 }
 
-.card__item-box{
+.card__item-box {
   display: flex;
   padding: 35px 45px 0 45px;
   align-items: center;
@@ -164,10 +164,10 @@ li {
 }
 
 @font-face {
-  font-family: "SantelloRegular";
-  src: url("../santello-regular.ttf");
+  font-family: "Santello";
+  src: url(../santello-regular.ttf);
 }
 
-.chapter__list-box-horizontal{
+.chapter__list-box-horizontal {
   padding: 0;
 }

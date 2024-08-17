@@ -1,25 +1,23 @@
-@import "components/header.css";
-@import "components/main.css";
-@import "components/footer.css";
-@import "components/slider.css";
+@import "./components/header.scss";
+@import "./components/main.scss";
+@import "./components/footer.scss";
+@import "./components/slider.scss";
 
-*{
-    scroll-behavior: smooth;
+* {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-image: url("img/image 8.png");
-    background-repeat: no-repeat;
-    background-position: top right;
+body {
+  background-image: url("img/image 8.png");
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 @font-face {
-    font-family: 'Santello';
-    src: url(santello-regular.ttf);
+  font-family: "Santello";
+  src: url(santello-regular.ttf);
 }
 
-html{
-    max-width: 100%;
+html {
+  max-width: 100%;
 }
-
-
