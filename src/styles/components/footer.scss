@@ -1,0 +1,42 @@
+@layer base {
+  @font-face {
+    font-family: "SantelloRegular";
+    src: url("../santello-regular.ttf");
+  }
+}
+
+/* Black Box Footer */
+.black_box_footer {
+  @apply bg-black h-[207px];
+}
+
+/* Footer Links */
+.footer__link-phone,
+.footer__link-instagram {
+  @apply text-[#F2F0F0] text-[18px] font-normal;
+}
+
+/* Footer Container */
+.footer {
+  @apply bg-black flex justify-around items-center flex-col sm:flex-row;
+}
+
+/* Footer Name */
+.footer__name {
+  @apply text-[#F3C301] text-[45px] font-medium;
+}
+
+/* Footer Button */
+.footer__button {
+  @apply h-full cursor-pointer hidden sm:block;
+}
+
+/* Transform Style Placeholder */
+.footer__button:hover {
+  @apply bg-opacity-80; /* Tailwind doesn't have a direct darken utility */
+}
+
+/* General Footer Styles */
+footer {
+  @apply mt-[100px];
+}

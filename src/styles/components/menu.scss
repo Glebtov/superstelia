@@ -1,0 +1,9 @@
+.menu {
+  @apply flex flex-col w-full bg-black text-[24px] text-white;
+  &__main {
+    @apply flex flex-col items-center justify-center;
+  }
+  &__footer {
+    @apply flex flex-col items-center justify-center;
+  }
+}
