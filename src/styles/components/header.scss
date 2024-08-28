@@ -3,7 +3,7 @@
     @apply absolute left-4 w-[74px] h-[36px];
   }
   &__lines {
-    @apply absolute right-4 w-14 sm:w-[122px];
+    @apply absolute right-4 w-14 sm:w-[122px] cursor-pointer;
   }
   &__phone {
     @apply m-2.5 w-5 sm:w-8;
