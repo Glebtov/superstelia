@@ -1,9 +1,24 @@
 .menu {
-  @apply flex flex-col w-full bg-black text-[24px] text-white;
+  @apply flex flex-col w-full bg-black text-[24px] text-white z-50 fixed h-full right-[-100%];
+  &__close {
+    @apply ml-auto m-5;
+  }
   &__main {
     @apply flex flex-col items-center justify-center;
+    &-text {
+      @apply my-4;
+    }
   }
   &__footer {
-    @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center justify-center mt-10;
+    &-text {
+      @apply my-4;
+    }
+    &-item {
+      @apply flex items-center gap-2.5;
+    }
+  }
+  &__line {
+    @apply w-full h-[1px] bg-yellow-300;
   }
 }

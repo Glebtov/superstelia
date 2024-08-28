@@ -19,25 +19,43 @@
     <title>Superstelia</title>
   </head>
 
-  <body>
+  <body style="background-image: url(../src/styles/img/image8.png)">
     <header>
-      <div class="menu">
-        <div class="menu__close">
-          <img src="../src/styles/img/close.png" alt="" />
+      <div class="menu" id="menu">
+        <div class="menu__close" id="button_close">
+          <img src="../src/styles/img/close.png" alt="" onclick="closeMenu()" />
         </div>
         <div class="menu__main">
-          <h3>Профільні системи:</h3>
-          <div></div>
-          <h3>Освітлення:</h3>
-          <div></div>
-          <h3>Наші цінності:</h3>
-          <div></div>
-          <h3>Етапи нашої роботи</h3>
-          <div></div>
-          <h3>Інформація про обʼєкти</h3>
+          <h3 class="menu__main-text">Профільні системи:</h3>
+          <div class="menu__line"></div>
+          <h3 class="menu__main-text">Освітлення:</h3>
+          <div class="menu__line"></div>
+          <h3 class="menu__main-text">Наші цінності:</h3>
+          <div class="menu__line"></div>
+          <h3 class="menu__main-text">Етапи нашої роботи</h3>
+          <div class="menu__line"></div>
+          <h3 class="menu__main-text">Інформація про обʼєкти</h3>
+          <div class="menu__line"></div>
           <div class="menu__footer">
-            <h3>+38 (095) 457-39-56</h3>
-            <h3>superstelya777</h3>
+            <div class="menu__footer-item">
+              <div>
+                <img src="../src/styles/img/phone.png" alt="" />
+              </div>
+              <h3 class="menu__footer-text" href="tel:+380954573956">
+                +38 (095) 457-39-56
+              </h3>
+            </div>
+            <div class="menu__footer-item">
+              <div>
+                <img src="../src/styles/img/instagram.png" alt="" />
+              </div>
+              <h3
+                class="menu__footer-text"
+                href="https://www.instagram.com/superstelya777/"
+              >
+                superstelya777
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -51,10 +69,17 @@
             >+38 (095) 457-39-56</a
           >
         </p>
-        <img src="../src/styles/img/lines.png" class="header__lines" />
+        <img
+          src="../src/styles/img/lines.png"
+          class="header__lines"
+          id="button_open"
+          onclick="showMenu()"
+        />
       </div>
       <div>
-        <h1 class="header__highText">Монтаж натяжних стель</h1>
+        <a href="#profiles"
+          ><h1 class="header__highText">Монтаж натяжних стель</h1></a
+        >
         <h4 class="header__underText">
           Розробка дизайну та освітлення<br />стельового простору
         </h4>
@@ -67,7 +92,9 @@
         <h2 class="chapter__item-text margin-x">
           Ми пропонуємо сучасні профільні системи та освітлення
         </h2>
-        <h3 class="chapter__name-text__characteristics">Профільні системи:</h3>
+        <h3 class="chapter__name-text__characteristics" name="profiles">
+          Профільні системи:
+        </h3>
       </div>
       <!-- <div class="chapter__name"></div> -->
       <!-- </div> -->
@@ -177,8 +204,8 @@
 
       <div class="yellow_line"></div>
 
-      <div class="chapter" style="flex-direction: row-reverse">
-        <div class="chapter__list">
+      <div class="chapter">
+        <div class="chapter__list" style="align-items: flex-end">
           <ul class="chapter__list-box-horizontal">
             <li class="chapter__list__item-horizontal">
               <img
@@ -196,7 +223,7 @@
             </li>
             <li class="chapter__list__item-horizontal" style="margin: 0">
               <img
-                src="styles/img/modern.png"
+                src="../src/styles/img/modern.png"
                 class="chapter__list__item-horizontal-img"
               />
               <p class="chapter__list__item-text">Сучасність</p>
@@ -311,7 +338,7 @@
               "сюрпризів"
             </p>
           </div>
-          <img class="card-image" src="styles/img/image%2010.png" />
+          <img class="card-image" src="../src/styles/img/image%2010.png" />
         </div>
       </div>
 
@@ -342,7 +369,7 @@
           <div class="slider__item">
             <img
               class="../src/slider__item-photo"
-              src="styles/img/sliderPhoto1.png"
+              src="../src/styles/img/sliderPhoto1.png"
             />
             <div style="margin: 33px">
               <span class="slider__item-name">

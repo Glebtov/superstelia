@@ -7,19 +7,20 @@
 
 /* Chapter Component */
 .chapter {
-  @apply sm:mx-auto mt-4 flex w-full sm:w-[98%] justify-between items-end;
+  @apply sm:mx-auto mt-4 flex w-full sm:w-[98%] justify-between items-end px-4;
   &__first {
     @apply mx-auto flex w-[98%] justify-between items-end mt-[440px] sm:mt-80;
   }
   &__list {
+    @apply w-full;
     &__item {
       &-text {
         @apply font-extralight text-[20px] sm:text-2xl sm:font-normal;
       }
       &-horizontal {
-        @apply flex flex-col sm:flex-row justify-end sm:inline-flex mr-[58px] p-0;
+        @apply flex flex-col sm:flex-row justify-between sm:inline-flex sm:mr-[58px] p-0;
         &-img {
-          @apply w-[48px] sm:w-[80px];
+          @apply w-[36px] sm:w-[80px];
         }
       }
     }
@@ -81,7 +82,7 @@
   &__item {
     @apply w-full sm:w-[calc(60%-4px)] flex-grow;
     &-box {
-      @apply flex px-6 pt-6 sm:p-[35px_45px_0_45px] items-center gap-[70px];
+      @apply flex px-4 pt-6 sm:p-[35px_45px_0_45px] items-center gap-10 sm:gap-[70px];
     }
     &-title {
       @apply text-[#f3c301] text-[32px] font-normal flex-grow;
@@ -102,7 +103,7 @@ li {
 }
 
 .chapter__list-box-horizontal {
-  @apply p-0 my-8 sm:my-16 flex;
+  @apply p-0 my-8 sm:my-16 flex justify-between sm:justify-normal;
 }
 
 .margin-chapter {

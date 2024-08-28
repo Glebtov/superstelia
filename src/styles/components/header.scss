@@ -18,7 +18,7 @@
     @apply text-[#111] text-[34px] mb-20 sm:text-[90px] font-semibold leading-normal pt-[2.5em] m-[0.3em] w-fit;
   }
   &__underText {
-    @apply text-[#111] text-[28px] font-extralight sm:font-normal leading-normal flex ml-auto mr-auto sm:mt-[1.5em] sm:ml-[8em];
+    @apply text-[#111] text-[28px] px-4 sm:px-0 font-extralight sm:font-normal leading-normal flex ml-auto mr-auto sm:mt-[1.5em] sm:ml-[8em];
   }
 }
 .header__logo .header__lines {

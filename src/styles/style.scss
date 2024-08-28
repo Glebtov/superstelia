@@ -8,13 +8,8 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
-  border: 1px solid green;
-}
-
 body {
-  background-image: url("img/image 8.png");
+  background-image: url("./img/image8.png");
   background-repeat: no-repeat;
   background-position: top right;
 }

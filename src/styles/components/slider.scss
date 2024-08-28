@@ -5,6 +5,10 @@
   }
 }
 
+.wrapper {
+  @apply px-4;
+}
+
 .slider {
   @apply flex justify-between overflow-hidden w-full;
 }
