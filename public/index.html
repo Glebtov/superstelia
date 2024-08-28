@@ -21,40 +21,56 @@
 
   <body style="background-image: url(../src/styles/img/image8.png)">
     <header>
-      <div class="menu" id="menu">
-        <div class="menu__close" id="button_close">
-          <img src="../src/styles/img/close.png" alt="" onclick="closeMenu()" />
-        </div>
-        <div class="menu__main">
-          <h3 class="menu__main-text">Профільні системи:</h3>
-          <div class="menu__line"></div>
-          <h3 class="menu__main-text">Освітлення:</h3>
-          <div class="menu__line"></div>
-          <h3 class="menu__main-text">Наші цінності:</h3>
-          <div class="menu__line"></div>
-          <h3 class="menu__main-text">Етапи нашої роботи</h3>
-          <div class="menu__line"></div>
-          <h3 class="menu__main-text">Інформація про обʼєкти</h3>
-          <div class="menu__line"></div>
-        </div>
-        <div class="menu__footer">
-          <div class="menu__footer-item">
-            <div>
-              <img src="../src/styles/img/phone.png" alt="" />
-            </div>
-            <h3 class="menu__footer-text">
-              <a href="tel:+380954573956"> +38 (095) 457-39-56</a>
-            </h3>
+      <div class="modal" id="modal">
+        <div class="menu" id="menu">
+          <div class="menu__close" id="button_close">
+            <img
+              src="../src/styles/img/close.png"
+              alt=""
+              onclick="closeMenu()"
+            />
           </div>
-          <div class="menu__footer-item">
-            <div>
-              <img src="../src/styles/img/instagram.png" alt="" />
-            </div>
-            <h3 class="menu__footer-text">
-              <a href="https://www.instagram.com/superstelya777/">
-                superstelya777
-              </a>
+          <div class="menu__main">
+            <h3 class="menu__main-text" onclick="closeMenu()">
+              <a href="#profiles">Профільні системи:</a>
             </h3>
+            <div class="menu__line"></div>
+            <h3 class="menu__main-text" onclick="closeMenu()">
+              <a href="#light">Освітлення:</a>
+            </h3>
+            <div class="menu__line"></div>
+            <h3 class="menu__main-text" onclick="closeMenu()">
+              <a href="#benefits"> Наші цінності:</a>
+            </h3>
+            <div class="menu__line"></div>
+            <h3 class="menu__main-text" onclick="closeMenu()">
+              <a href="#work"> Етапи нашої роботи</a>
+            </h3>
+            <div class="menu__line"></div>
+            <h3 class="menu__main-text" onclick="closeMenu()">
+              <a href="#information"> Інформація про обʼєкти</a>
+            </h3>
+            <div class="menu__line"></div>
+          </div>
+          <div class="menu__footer">
+            <div class="menu__footer-item">
+              <div>
+                <img src="../src/styles/img/phone.png" alt="" />
+              </div>
+              <h3 class="menu__footer-text">
+                <a href="tel:+380954573956"> +38 (095) 457-39-56</a>
+              </h3>
+            </div>
+            <div class="menu__footer-item">
+              <div>
+                <img src="../src/styles/img/instagram.png" alt="" />
+              </div>
+              <h3 class="menu__footer-text">
+                <a href="https://www.instagram.com/superstelya777/">
+                  superstelya777
+                </a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +104,7 @@
     <main>
       <div class="chapter__first">
         <!-- <div class="chapter__item"> -->
-        <h2 class="chapter__item-text margin-x">
+        <h2 class="chapter__item-text margin-x" id="profiles">
           Ми пропонуємо сучасні профільні системи та освітлення
         </h2>
         <h3 class="chapter__name-text__characteristics" name="profiles">
@@ -150,7 +166,7 @@
       </div>
 
       <div class="chapter">
-        <h3 class="chapter__name-text__light">Освітлення:</h3>
+        <h3 class="chapter__name-text__light" id="light">Освітлення:</h3>
       </div>
       <div class="yellow_line"></div>
 
@@ -190,7 +206,11 @@
 
       <div class="chapter">
         <!-- <div class="chapter__item"> -->
-        <h2 style="margin: 0" class="chapter__item-text margin-chapter">
+        <h2
+          style="margin: 0"
+          class="chapter__item-text margin-chapter"
+          id="benefits"
+        >
           Ми - компанія, яка займається монтаженим натяжних стель
         </h2>
         <!-- <div class="chapter__name"> -->
@@ -203,48 +223,51 @@
 
       <div class="yellow_line"></div>
 
-      <div class="chapter">
+      <div class="chapter" style="display: block">
         <div
           class="chapter__list"
           style="align-items: flex-end; display: flex; flex-direction: column"
         >
-          <ul class="chapter__list-box-horizontal">
-            <li class="chapter__list__item-horizontal">
-              <img
-                src="../src/styles/img/truth.png"
-                class="chapter__list__item-horizontal-img"
-              />
-              <p class="chapter__list__item-text">Чесність</p>
-            </li>
-            <li class="chapter__list__item-horizontal">
-              <img
-                src="../src/styles/img/clean.png"
-                class="chapter__list__item-horizontal-img"
-              />
-              <p class="chapter__list__item-text">Чистота</p>
-            </li>
-            <li class="chapter__list__item-horizontal" style="margin: 0">
-              <img
-                src="../src/styles/img/modern.png"
-                class="chapter__list__item-horizontal-img"
-              />
-              <p class="chapter__list__item-text">Сучасність</p>
-            </li>
-          </ul>
-          <img src="../src/styles/img/Andrew.png" />
+          <div class="chapter__list__aligning">
+            <ul class="chapter__list-box-horizontal">
+              <li class="chapter__list__item-horizontal">
+                <img
+                  src="../src/styles/img/truth.png"
+                  class="chapter__list__item-horizontal-img"
+                />
+                <p class="chapter__list__item-text">Чесність</p>
+              </li>
+              <li class="chapter__list__item-horizontal">
+                <img
+                  src="../src/styles/img/clean.png"
+                  class="chapter__list__item-horizontal-img"
+                />
+                <p class="chapter__list__item-text">Чистота</p>
+              </li>
+              <li class="chapter__list__item-horizontal" style="margin: 0">
+                <img
+                  src="../src/styles/img/modern.png"
+                  class="chapter__list__item-horizontal-img"
+                />
+                <p class="chapter__list__item-text">Сучасність</p>
+              </li>
+            </ul>
+            <img src="../src/styles/img/Andrew.png" />
+          </div>
         </div>
       </div>
 
       <div class="chapter">
         <!-- <div class="chapter__item"> -->
-        <h2 class="chapter__item-text">Етапи нашої роботи</h2>
-        <h3 class="chapter__name-text" style="font-size: 90px">01</h3>
+        <h2 class="chapter__item-text" id="work">Етапи нашої роботи</h2>
+        <h3 class="chapter__name-text">01</h3>
         <!-- </div> -->
         <!-- <div class="chapter__name">
         </div> -->
       </div>
 
       <div class="yellow_line"></div>
+      <h3 class="chapter__name-text-mobile">01</h3>
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="card-box">
@@ -254,7 +277,7 @@
               <span class="card__item-title">Дзвінок</span>
             </div>
             <p class="card__item-text">
-              Отримуємо від вас дзвінок та домовляємось про зустріч та заміри
+              Отримуємо від Вас дзвінок та домовляємось про зустріч та заміри
             </p>
           </div>
           <img src="../src/styles/img/image%209.png" class="card-image" />
@@ -263,7 +286,7 @@
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="chapter__name">
-          <h3 class="chapter__name-text" style="font-size: 90px">02</h3>
+          <h3 class="chapter__name-text">02</h3>
         </div>
       </div>
 
@@ -271,6 +294,7 @@
         <div style="width: 34%; margin: 0"></div>
         <div class="yellow_line_half" style="width: 64%"></div>
       </div>
+      <h3 class="chapter__name-text-mobile">02</h3>
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="card-box">
@@ -291,7 +315,7 @@
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="chapter__name">
-          <h3 class="chapter__name-text" style="font-size: 90px">03</h3>
+          <h3 class="chapter__name-text">03</h3>
         </div>
       </div>
 
@@ -299,6 +323,8 @@
         <div style="width: 34%; margin: 0"></div>
         <div class="yellow_line_half" style="width: 64%"></div>
       </div>
+
+      <h3 class="chapter__name-text-mobile">03</h3>
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="card-box">
@@ -319,7 +345,7 @@
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="chapter__name">
-          <h3 class="chapter__name-text" style="font-size: 90px">04</h3>
+          <h3 class="chapter__name-text">04</h3>
         </div>
       </div>
 
@@ -327,6 +353,8 @@
         <div style="width: 34%; margin: 0"></div>
         <div class="yellow_line_half" style="width: 64%"></div>
       </div>
+
+      <h3 class="chapter__name-text-mobile">04</h3>
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="card-box">
@@ -346,17 +374,16 @@
 
       <div class="chapter" style="flex-direction: row-reverse">
         <div class="chapter__item">
-          <h2 class="chapter__item-text">Інформація про об'єкти</h2>
+          <h2 class="chapter__item-text" id="information">
+            Інформація про об'єкти
+          </h2>
         </div>
       </div>
 
       <div class="yellow_line"></div>
 
       <div class="chapter" style="display: block">
-        <div
-          class="chapter__list-box-horizontal"
-          style="justify-content: space-between"
-        >
+        <div class="chapter__list-box-horizontal">
           <img
             src="../src/styles/img/left.png"
             style="margin-right: 20px"

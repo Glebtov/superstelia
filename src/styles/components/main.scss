@@ -9,10 +9,12 @@
 .chapter {
   @apply sm:mx-auto mt-4 flex w-full sm:w-[98%] justify-between items-end px-4;
   &__first {
-    @apply mx-auto flex w-[98%] justify-between items-end mt-[440px] sm:mt-80;
+    @apply mx-auto flex w-[98%] justify-between items-end mt-[210px] sm:mt-80;
   }
   &__list {
-    @apply w-full;
+    &__aligning {
+      @apply sm:items-center flex flex-col;
+    }
     &__item {
       &-text {
         @apply font-extralight text-[20px] sm:text-2xl sm:font-normal;
@@ -28,7 +30,10 @@
   &__name {
     @apply order-2 text-right h-fit;
     &-text {
-      @apply text-[#111] hidden sm:flex text-[32px] font-normal m-0 h-28 text-nowrap w-fit;
+      @apply text-[#111] hidden sm:flex text-[90px] font-normal m-0 h-28 text-nowrap w-fit;
+      &-mobile {
+        @apply flex sm:hidden text-[34px] text-[#111] mr-5 justify-end font-[600];
+      }
       &__light {
         @apply text-[#111] text-[28px] sm:text-[32px] font-normal m-0 h-fit flex text-nowrap w-fit;
         margin-left: auto;
@@ -64,9 +69,9 @@
 /* Yellow Line */
 .yellow {
   &_line {
-    @apply bg-[#f3c301] outline outline-1 outline-[#f3c301] h-[2px] text-right mx-5 sm:mx-0;
+    @apply bg-[#f3c301] outline outline-1 outline-[#f3c301] h-[2px] text-right mx-5 sm:mx-4;
     &_half {
-      @apply bg-[#f3c301] outline outline-1 outline-[#f3c301] h-[2px] ml-3;
+      @apply bg-[#f3c301] outline outline-1 outline-[#f3c301] h-[2px] mr-5 sm:mr-4;
     }
   }
 }
@@ -103,7 +108,7 @@ li {
 }
 
 .chapter__list-box-horizontal {
-  @apply p-0 my-8 sm:my-16 flex justify-between sm:justify-normal;
+  @apply p-0 my-8 sm:my-16 flex justify-between sm:justify-end;
 }
 
 .margin-chapter {
