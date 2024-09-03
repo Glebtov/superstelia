@@ -4,10 +4,6 @@
 @import "./components/slider.scss";
 @import "./components/menu.scss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
   background-image: url("./img/image8.png");
   background-repeat: no-repeat;
@@ -32,3 +28,7 @@ html {
 .slick-initialized .slick-slide {
   display: flex;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

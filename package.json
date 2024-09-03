@@ -1,11 +1,12 @@
 {
   "scripts": {
-    "start": "npx tailwindcss -i ./src/styles/style.scss -o ./public/output.scss --watch",
-    "build": "npx tailwindcss -i ./src/styles/style.scss -o ./public/output.css"
+    "start": "postcss ./src/styles/style.scss -o ./public/output.css --watch",
+    "build": "postcss ./src/styles/style.scss -o ./public/output.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
+    "postcss": "^8.4.42",
+    "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
     "postcss-nesting": "^13.0.0",
     "sass": "^1.77.8",
