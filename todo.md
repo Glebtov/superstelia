@@ -1,4 +1,0 @@
-- Mobile adaptive
-- Slider
-- Photos
-- Text
